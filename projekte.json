@@ -1,0 +1,14 @@
+[
+    {
+        "title": "E-Portfolio",
+        "description": "Ich habe mein E-Portfolio mit HTML, CSS & JS erstellt. Mein Ziel ist es damit, möglichst einen einfachen Überblick von mir zu vermitteln. Auf der Website erfährt man mehr über mich und kann alle Dokumente(Lebenslauf, Modulnoten etc.) herunterladen."
+    },
+    {
+        "title": "ToDo Manager",
+        "description": "Im Rahmen des Schulmoduls 294 habe ich eine vollständige Single Page Application (SPA) zur Verwaltung von TODOs entwickelt. Die Applikation läuft ohne Server-Backend mit JS über den LocalStorage des Browsers. Alle Daten werden lokal im Browser gespeichert."
+    },
+    {
+        "title": "Wetter App",
+        "description": "Zeigt aktuelle Wetterdaten über eine API an."
+    }
+]
