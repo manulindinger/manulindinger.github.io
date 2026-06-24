@@ -1,14 +1,41 @@
 [
     {
         "title": "E-Portfolio",
-        "description": "Ich habe mein E-Portfolio mit HTML, CSS & JS erstellt. Mein Ziel ist es damit, möglichst einen einfachen Überblick von mir zu vermitteln. Auf der Website erfährt man mehr über mich und kann alle Dokumente(Lebenslauf, Modulnoten etc.) herunterladen."
+        "description": "Ich habe mein E-Portfolio mit HTML, CSS & JS erstellt. Mein Ziel ist es damit, möglichst einen einfachen Überblick von mir zu vermitteln. Auf der Website erfährt man mehr über mich und kann alle Dokumente(Lebenslauf, Modulnoten etc.) herunterladen.",
+        "date": "20.06.2026",
+        "linkname":"Zur Home-Page",
+        "link" : "index.html"
     },
     {
         "title": "ToDo Manager",
-        "description": "Im Rahmen des Schulmoduls 294 habe ich eine vollständige Single Page Application (SPA) zur Verwaltung von TODOs entwickelt. Die Applikation läuft ohne Server-Backend mit JS über den LocalStorage des Browsers. Alle Daten werden lokal im Browser gespeichert."
+        "description": "Im Rahmen des Schulmoduls 294 habe ich eine vollständige Single Page Application (SPA) zur Verwaltung von TODOs entwickelt. Die Applikation läuft ohne Server-Backend mit JS über den LocalStorage des Browsers. Alle Daten werden lokal im Browser gespeichert.",
+        "date": "17.06.2026",
+        "linkname":"Github",
+        "link" : "https://github.com/manulindinger/ToDo-Manager"
+
     },
     {
-        "title": "Wetter App",
-        "description": "Zeigt aktuelle Wetterdaten über eine API an."
+        "title": "Bücher-Antiquariat Webseite",
+        "description": "Als Projekt zum Modul 322 fertigen wir eine Website für die Darstellung des Sortimentes eines Bücher - Antiquitäten Geschäftes. Dabei verwenden wir für die Datenbank MySQL und für die Visualisierung und Funktionen zur Verwaltung der Daten nutzen wir PHP mit HTML und CSS. Das Ziel ist es unsere Anwendung möglichst benutzerfreundlich zu gestalten, sodass die Anwendung möglichst ergonomisch gestaltet ist.",
+        "date": "17.02.2026",
+        "linkname":"Github",
+        "link" : "https://github.com/manulindinger/Buecher-Antiquariat-Webseite"
+
+    },
+    {
+        "title": "Schiffe versenken Spiel",
+        "description": "Der Computer legt zwei Schiffe fest, die irgendwo auf einem Feld liegen (z.B. A1 bis A3). Der Spieler muss raten, wo die Schiffe liegen, indem er eine Position eingibt. Gibt er eine Position ein, auf der ein Teil eines Schiffes ist, wird dieser Teil des Schiffes «zerstört». Der Spieler muss alle Teile der Schiffe zerstören, dann ist das Spiel gewonnen. Wenn er eine Position eingibt, auf der kein Schiff ist, verliert der Spieler ein Leben. Er hat insgesamt 4 Leben, wenn er keine mehr hat, ist das Spiel verloren",
+        "date": "17.02.2026",
+        "linkname":"Github",
+        "link" : "https://github.com/manulindinger/schiffe-versenken"
+
+    },
+    {
+        "title": "MongoDB Katalog",
+        "description": "Ich habe ein terminalbasiertes Python-Programm entwickelt, das eine Verbindung zu einer MongoDB-Datenbank über PyMongo herstellt. Das Programm ermöglicht es, Daten direkt aus dem Terminal abzufragen und zu ändern. Zudem war ich für die Installation und Einrichtung des PyMongo-Moduls verantwortlich.",
+        "date": "27.10.2025",
+        "linkname":"Github",
+        "link" : "https://github.com/manulindinger/MongoDB-Katalog"
+
     }
 ]
