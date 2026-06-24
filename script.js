@@ -17,9 +17,13 @@ async function setdetails() {
                 <div class="project">
                     <div>
                         <h2 class="project-title">${project.title}</h2>
+                        <p class="project-date hidden">${project.date}</p>
                         <p class="project-description hidden">
                             ${project.description}
                         </p>
+                        <a href="${project.link}" class="project-link hidden" target="_blank">
+                            ${project.linkname}
+                        </a>
                     </div>
 
                     <button class="dropdown-btn">﹀</button>
@@ -28,14 +32,15 @@ async function setdetails() {
         });
         document.querySelectorAll('.dropdown-btn').forEach(button => {
             button.addEventListener('click', () => {
-
-                const description =
-                    button.parentElement.querySelector('.project-description');
+                const description = button.parentElement.querySelector('.project-description');
+                const date = button.parentElement.querySelector('.project-date');
+                const link = button.parentElement.querySelector('.project-link');
 
                 description.classList.toggle('hidden');
+                link.classList.toggle('hidden');
+                date.classList.toggle('hidden');
 
-                button.textContent =
-                    description.classList.contains('hidden') ? '﹀' : '︿';
+                button.textContent = description.classList.contains('hidden') ? '﹀' : '︿';
             });
         });
 
