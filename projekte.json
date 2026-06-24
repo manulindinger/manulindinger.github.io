@@ -25,7 +25,7 @@
     {
         "title": "Schiffe versenken Spiel",
         "description": "Der Computer legt zwei Schiffe fest, die irgendwo auf einem Feld liegen (z.B. A1 bis A3). Der Spieler muss raten, wo die Schiffe liegen, indem er eine Position eingibt. Gibt er eine Position ein, auf der ein Teil eines Schiffes ist, wird dieser Teil des Schiffes «zerstört». Der Spieler muss alle Teile der Schiffe zerstören, dann ist das Spiel gewonnen. Wenn er eine Position eingibt, auf der kein Schiff ist, verliert der Spieler ein Leben. Er hat insgesamt 4 Leben, wenn er keine mehr hat, ist das Spiel verloren",
-        "date": "17.02.2026",
+        "date": "17.06.2025",
         "linkname":"Github",
         "link" : "https://github.com/manulindinger/schiffe-versenken"
 
