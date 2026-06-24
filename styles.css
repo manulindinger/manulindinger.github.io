@@ -186,6 +186,22 @@ main {
     margin-left: 85px;
     margin-top: 45px;
 }
+.project-date{
+    color: var(--hellblau);
+}
+
+.project-link{
+    text-decoration: none;
+    padding: 4px;
+    color: var(--himmelblau);
+    border: 1px solid var(--hellblau);
+    border-radius: 7px;
+}
+
+.project-link:hover{
+    background-color: var(--hellblau);
+    color: var(--dunkelblau);
+}
 .project{
     padding: 15px;
     color: #ffffff;
@@ -196,8 +212,13 @@ main {
     margin-bottom: 12px;
     justify-content: space-between;
 }
-.project-text {
-    color:white;    
+.project-description{
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.project-title {
+    color:var(--himmelblau);    
 }
 #project-error {
     color:#f8f409;    
@@ -468,8 +489,7 @@ footer {
     color: var(--himmelblau);
     padding: 2px 30px 0 0;
 }
-
-/*  MOBILE */
+/* handy */
 @media (max-width: 768px) {
 
   .Navbar {
@@ -507,8 +527,6 @@ footer {
   .hero-buttons {
     flex-wrap: wrap;
   }
-
-
   .console {
     min-width: unset;
     width: 100%;
@@ -550,10 +568,12 @@ footer {
     width: 100%;
     box-sizing: border-box;
   }
+
   .skills-grid {
     grid-template-columns: 1fr;
     width: 92%;
   }
+
   .download {
     margin-left: 20px;
     margin-right: 20px;
