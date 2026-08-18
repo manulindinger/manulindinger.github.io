@@ -17,6 +17,34 @@ body {
     display: flex;
     flex-direction: column;
 }
+#linkedin-icon {
+    font-size: 2rem;
+    color: var(--hellblau);
+    cursor: pointer;
+}
+
+.linkedin-icon-div {
+    position: fixed;
+    bottom: 8vh;
+    right: 3vw;
+
+    width: 3rem;
+    height: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid var(--akzentblau);
+    background-color: var(--dunkelblau);
+    border-radius: 12px;
+
+    transition: 0.2s;
+}
+
+.linkedin-icon-div:hover {
+    box-shadow: 0px 0px 19px 0px rgba(255,255,255,0.75);
+}
 
 .Navbar {
     display: flex;
@@ -489,125 +517,229 @@ footer {
     color: var(--himmelblau);
     padding: 2px 30px 0 0;
 }
-/* handy */
+
+
+/* Kleinere Bildschirme (Handy) */
+
 @media (max-width: 768px) {
 
-  .Navbar {
-    flex-direction: column;
-    padding: 12px 20px;
-    gap: 12px;
-  }
+    .Navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 4vw;
+        gap: 1rem;
+    }
 
-  .content {
-    padding-right: 0;
-    padding-top: 0;
-    flex-wrap: wrap;
-    gap: 12px;
-  }
+    .left {
+        padding-left: 0;
+        width: 100%;
+        justify-content: center;
+    }
 
-  .left {
-    padding-left: 0;
-  }
+    .logo-text h3 {
+        font-size: 1rem;
+    }
 
-  .hero {
-    flex-direction: column;
-    width: 92%;
-    margin: 40px auto 20px auto;
-    gap: 30px;
-  }
+    .logo-text p {
+        font-size: 0.8rem;
+    }
 
-  .hero-text h1 {
-    font-size: 2rem;
-  }
+    .content {
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.7rem;
+    }
 
-  .hero-text p {
-    max-width: 100%;
-  }
+    .content a {
+        font-size: 0.85rem;
+        padding-bottom: 0.3rem;
+    }
 
-  .hero-buttons {
-    flex-wrap: wrap;
-  }
-  .console {
-    min-width: unset;
-    width: 100%;
-    margin-top: 0;
-    box-sizing: border-box;
-  }
+    .hero {
+        width: 90%;
+        margin: 5vh auto 3vh auto;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 2rem;
+    }
 
-  .projects {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
+    .hero-text h1 {
+        font-size: clamp(1.8rem, 7vw, 2.5rem);
+        line-height: 1.2;
+    }
 
-  .project {
-    width: 100%;
-    min-width: unset;
-    box-sizing: border-box;
-  }
+    .hero-text h3 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
 
-  #hrcontainer {
-    width: 90%;
-  }
+    .hero-text p {
+        width: 100%;
+        max-width: none;
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
 
-  .inhalt {
-    width: 92%;
-    margin: 30px auto;
-    padding: 20px;
-  }
+    .hero-buttons {
+        flex-wrap: wrap;
+        gap: 0.7rem;
+        margin-top: 1.5rem;
+    }
 
-  .page-content {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
+    .hero-buttons a {
+        padding: 0.7rem 1rem;
+        font-size: 0.9rem;
+    }
 
-  .page-content p {
-    width: 100%;
-  }
+    .console {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        margin-top: 0;
+        padding: 1rem;
+        overflow: hidden;
+    }
 
-  .project-card {
-    width: 100%;
-    box-sizing: border-box;
-  }
+    .console pre {
+        font-size: clamp(0.55rem, 2.5vw, 0.75rem);
+        overflow-x: auto;
+    }
 
-  .skills-grid {
-    grid-template-columns: 1fr;
-    width: 92%;
-  }
+    .linkedin-icon-div {
+        right: 4vw;
+        bottom: 4vh;
 
-  .download {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
+        width: 2.8rem;
+        height: 2.8rem;
+    }
 
-  #aboutme {
-    flex-direction: column;
-    margin-top: 25px;
-  }
+    #linkedin-icon {
+        font-size: 1.6rem;
+    }
 
-  #cv {
-    width: 92%;
-    min-width: unset;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    .page-content {
+        margin: 2rem 5vw;
+    }
 
-  .placeholder {
-    width: 92%;
-    padding: 15px;
-  }
+    .page-content p {
+        width: 100%;
+        line-height: 1.7;
+    }
 
-  #cv-intro {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
+    .projects {
+        margin: 2rem 5vw;
+    }
 
-  #cv-picture {
-    margin-left: 0;
-    margin-right: 0;
-  }
+    .project {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
 
-  footer {
-    width: 92%;
-  }
+    .project-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .inhalt {
+        width: 90%;
+        box-sizing: border-box;
+        margin: 2rem auto;
+        padding: 1.5rem;
+    }
+
+    .skills-grid {
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin: 2rem auto;
+    }
+
+    .skill {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .skill table {
+        font-size: 0.85rem;
+    }
+
+    .skill th,
+    .skill td {
+        padding: 0.6rem;
+    }
+
+    .download {
+        width: 90%;
+        box-sizing: border-box;
+        margin: 2rem auto;
+        padding: 1rem;
+    }
+
+    #aboutme {
+        flex-direction: column;
+        width: 90%;
+        margin: 2rem auto;
+        gap: 2rem;
+    }
+
+    #cv {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    #cv-title h2 {
+        font-size: 1.4rem;
+    }
+
+    #cv-intro {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    #cv-picture {
+        width: clamp(120px, 40vw, 165px);
+        height: auto;
+        aspect-ratio: 3 / 4;
+        margin: 0;
+    }
+
+    .cv-labels {
+        font-size: 1.1rem;
+        margin-top: 1rem;
+    }
+
+    .cv-tabelle {
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    .cv-tabelle td {
+        padding: 0.4rem 0.5rem 0.4rem 0;
+        font-size: 0.8rem;
+        vertical-align: top;
+        overflow-wrap: anywhere;
+    }
+
+    .cv-tabelle td:first-child {
+        width: 32%;
+    }
+
+    .placeholder {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+    }
+    footer {
+        width: 90%;
+        box-sizing: border-box;
+        padding: 1rem 0;
+        font-size: 0.8rem;
+    }
 }
